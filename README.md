@@ -12,7 +12,10 @@
 
 ## Overview
 
-**Trek Guardian** is an IoT-based health monitoring system designed for mountaineers and trekkers operating in high-altitude environments. The device continuously monitors vital health metrics including blood oxygen saturation (SpO2), heart rate, altitude, temperature, humidity, and GPS location. When dangerous conditions are detected, it triggers immediate alerts via cloud API or establishes a local captive portal for rescue coordination.
+**Trek Guardian** is an IoT+ML based health monitoring system designed for mountaineers and trekkers operating in high-altitude environments. The device continuously monitors vital health metrics including blood oxygen saturation (SpO2), heart rate, altitude, temperature, humidity, and GPS location. When dangerous conditions are detected, it triggers immediate alerts via cloud API or establishes a local captive portal for rescue coordination which doesnt require network.
+
+
+KINDLY REFER THE https://github.com/roshanimmanuel792/Trek-Guardian.git FOR INSTALLATION OF DATASETS
 
 ---
 
