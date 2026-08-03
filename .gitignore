@@ -1,0 +1,39 @@
+# Secrets / local config
+.env
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env/
+
+# ML artifacts (large / regenerable)
+ml_model/*.pkl
+ml_model/sample_dataset.csv
+ml_model/model_rules.txt
+ml_model/rules_summary.txt
+ml_model/model.json
+# Keep metrics JSON summaries if small; ignore plots/caches
+ml_model/metrics/*.png
+ml_model/metrics/cv_folds.json
+
+# Datasets (download via ml_model/download_datasets.py)
+dataset/raw/
+dataset/processed/
+*.parquet
+*.7z
+*.partial
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Arduino build
+firmware/build/
+*.elf
+*.bin

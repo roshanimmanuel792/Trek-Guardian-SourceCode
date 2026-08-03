@@ -8,8 +8,8 @@
 #define WIFI_PASSWORD "trek1234"
 
 #define SERVER_HOST "your-server.com"
-#define SERVER_PORT 80
-#define API_ENDPOINT "/api/alerts"
+#define SERVER_PORT 5000
+#define API_ENDPOINT "/alert"
 
 #define SENSOR_READ_INTERVAL 5000
 #define ALERT_THRESHOLD_SPO2 90
@@ -23,6 +23,8 @@
 
 #define DEEPSLEEP_INTERVAL 300000
 
-#define ALERT_SERVER "http://your-server.com/api/alerts"
+// Must match Flask routes in iot_server/alert_api_example.py
+#define ALERT_SERVER "http://your-server.com:5000/alert"
+#define PREDICT_SERVER "http://your-server.com:5000/predict"
 
 #endif

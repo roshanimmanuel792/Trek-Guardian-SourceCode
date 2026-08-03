@@ -1,0 +1,30 @@
+{
+  "full_features": [
+    "altitude",
+    "spo2",
+    "heartRate",
+    "spo2_ewma",
+    "hr_ewma",
+    "spo2_slope",
+    "hr_slope",
+    "spo2_min",
+    "spo2_std",
+    "hr_std",
+    "hr_spo2_ratio",
+    "ascent_rate",
+    "respiratory_rate"
+  ],
+  "firmware_features": [
+    "altitude",
+    "spo2",
+    "heartRate",
+    "spo2_ewma",
+    "hr_ewma",
+    "spo2_slope",
+    "hr_slope"
+  ],
+  "window_sec": 45,
+  "horizon_sec": 90,
+  "task": "early_hypoxia_warning",
+  "labeling": "future_window_spo2_severity"
+}

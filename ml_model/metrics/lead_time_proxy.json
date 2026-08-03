@@ -1,0 +1,6 @@
+{
+  "n_early_critical_cases": 387,
+  "gbm_alert_rate": 0.9612403100775194,
+  "tree_alert_rate": 0.4573643410852713,
+  "baseline_alert_rate": 0.0
+}

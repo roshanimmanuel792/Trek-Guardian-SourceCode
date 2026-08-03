@@ -1,0 +1,77 @@
+{
+  "trained_at": "2026-08-03T18:22:31.106107+00:00",
+  "n_samples": 35484,
+  "n_subjects": 34,
+  "risk_distribution": {
+    "LOW": 25017,
+    "MODERATE": 4951,
+    "CRITICAL": 4367,
+    "HIGH": 1149
+  },
+  "cv_full_features": {
+    "n_splits": 5,
+    "gbm_macro_f1_mean": 0.6471302950683935,
+    "gbm_macro_f1_std": 0.04008125839417824,
+    "tree_macro_f1_mean": 0.6204850585037223,
+    "tree_macro_f1_std": 0.05564058628157827,
+    "baseline_macro_f1_mean": 0.557575112426877,
+    "baseline_macro_f1_std": 0.03522593131874007,
+    "beats_baseline_gbm": true,
+    "beats_baseline_tree": true
+  },
+  "cv_firmware_features": {
+    "n_splits": 5,
+    "gbm_macro_f1_mean": 0.6455387111352283,
+    "gbm_macro_f1_std": 0.03707770123743448,
+    "tree_macro_f1_mean": 0.6401986081534355,
+    "tree_macro_f1_std": 0.03425890305864386,
+    "baseline_macro_f1_mean": 0.557575112426877,
+    "baseline_macro_f1_std": 0.03522593131874007,
+    "beats_baseline_gbm": true,
+    "beats_baseline_tree": true
+  },
+  "tree_feature_importances": {
+    "altitude": 0.038796651244436486,
+    "spo2": 0.04613508728135903,
+    "heartRate": 0.00019351560940980168,
+    "spo2_ewma": 0.8083660791528966,
+    "hr_ewma": 0.05437434869052674,
+    "spo2_slope": 0.04868718976599641,
+    "hr_slope": 0.0034471282553750365
+  },
+  "schema": {
+    "full_features": [
+      "altitude",
+      "spo2",
+      "heartRate",
+      "spo2_ewma",
+      "hr_ewma",
+      "spo2_slope",
+      "hr_slope",
+      "spo2_min",
+      "spo2_std",
+      "hr_std",
+      "hr_spo2_ratio",
+      "ascent_rate",
+      "respiratory_rate"
+    ],
+    "firmware_features": [
+      "altitude",
+      "spo2",
+      "heartRate",
+      "spo2_ewma",
+      "hr_ewma",
+      "spo2_slope",
+      "hr_slope"
+    ],
+    "window_sec": 45,
+    "horizon_sec": 90,
+    "task": "early_hypoxia_warning",
+    "labeling": "future_window_spo2_severity"
+  },
+  "notes": [
+    "Labels come from future SpO2 horizon, not current thresholds alone.",
+    "Naive baseline uses current SpO2 thresholds only.",
+    "Chamber datasets (Harespod/HAPP) \u2260 Himalayan field AMS labels."
+  ]
+}
